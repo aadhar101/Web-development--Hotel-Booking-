@@ -10,12 +10,14 @@
   },
   "dependencies": {
     "axios": "^1.13.2",
+    "hook": "^0.1.0",
     "lucide-react": "^0.562.0",
     "next": "^16.1.1",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "react-hook-form": "^7.69.0",
     "react-toastify": "^11.0.5",
+    "resolver": "^0.1.11",
     "zod": "^4.3.6"
   },
   "devDependencies": {
