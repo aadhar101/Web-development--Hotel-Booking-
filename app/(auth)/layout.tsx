@@ -1,9 +1,12 @@
-import type { ReactNode } from "react";
-
-export default function AuthLayout({ children }: { children: ReactNode }) {
+// app/(auth)/layout.tsx
+export default function AuthLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="min-h-screen bg-gray-100">
-      {children}
+    /* bg-[#f0f2f5] - This is the light gray background color for the page.
+       min-h-screen - Ensures the background covers the full height of the browser.
+       flex items-center justify-center - Centers your card horizontally and vertically.
+    */
+    <div className="min-h-screen w-full flex items-center justify-center bg-[#f0f2f5] p-6">
+        {children}
     </div>
   );
 }
