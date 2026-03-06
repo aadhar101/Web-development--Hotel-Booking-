@@ -1,20 +1,13 @@
-import type { Metadata } from "next";
-import "./globals.css";
+// app/layout.tsx
+import "./global.css";
+import { ReactNode } from "react";
+import { AuthProvider } from "../context/authcontext";
 
-export const metadata: Metadata = {
-  title: "Hotel Booking App",
-  description: "Hotel booking authentication system",
-};
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body className="antialiased">
-        {children}
+      <body>
+        <AuthProvider>{children}</AuthProvider>
       </body>
     </html>
   );
